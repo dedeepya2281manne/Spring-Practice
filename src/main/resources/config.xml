@@ -13,6 +13,10 @@
    <context:component-scan base-package="org.example"></context:component-scan>
 
    <bean id="tyre" class="org.example.Tyre">
+<!--      Use any one of the below for depency injection using 1.Setter 2.Constructor-->
+
       <property name="brand" value="MRF"></property>
+         <constructor-arg value="MRF"></constructor-arg>
+
    </bean>
 </beans>

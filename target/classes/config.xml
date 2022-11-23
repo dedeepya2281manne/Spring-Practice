@@ -13,6 +13,8 @@
    <context:component-scan base-package="org.example"></context:component-scan>
 
    <bean id="tyre" class="org.example.Tyre">
-      <property name="brand" value="MRF"></property>
+<!--      <property name="brand" value="MRF"></property>-->
+         <constructor-arg value="MRF"></constructor-arg>
+
    </bean>
 </beans>

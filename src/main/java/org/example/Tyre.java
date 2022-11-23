@@ -2,6 +2,10 @@ package org.example;
 
 public class Tyre {
 
+    public Tyre(String brand) {
+        this.brand = brand;
+    }
+
     public String brand;
 
     public String getBrand() {
