@@ -1,5 +1,6 @@
 package org.example;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -22,12 +23,14 @@ public class App
 //        applicationcontext is superset of beanfactory, if its small project go with beanfactory else go with applicationcontext
 //        obj.drive();
 
+        // Configuration is done in 1.XML Configuration 2.Annotations 3.Java Configuration
         ApplicationContext context = new ClassPathXmlApplicationContext("config.xml");
 
-        Vehicle obj1 = (Vehicle) context.getBean("vehicle1");
+
+        Vehicle obj1 = (Vehicle) context.getBean("car");
         obj1.drive();
 
-        Vehicle obj2 = (Vehicle) context.getBean("vehicle2");
+        Vehicle obj2 = (Vehicle) context.getBean("bike");
         obj2.drive();
     }
 }
