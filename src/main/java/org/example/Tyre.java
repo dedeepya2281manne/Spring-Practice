@@ -1,10 +1,9 @@
 package org.example;
 
-public class Tyre {
+import org.springframework.stereotype.Component;
 
-    public Tyre(String brand) {
-        this.brand = brand;
-    }
+@Component
+public class Tyre {
 
     public String brand;
 
@@ -18,8 +17,6 @@ public class Tyre {
 
     @Override
     public String toString() {
-        return "Tyre{" +
-                "brand='" + brand + '\'' +
-                '}';
+        return "Tyre";
     }
 }
